@@ -1,0 +1,112 @@
+:root {
+  --orange-gradient: linear-gradient(
+    90deg,
+    #ff4533 0%,
+    rgba(255, 69, 51, 0.5) 100%
+  );
+  --font-family:"helvetica"
+  ---placeholder-color: #707070;
+  --orange: #ff4533;
+  --font-family2: "Denk One";
+  --black: #020202;
+  --white: #fff;
+  --background-color: #ffffff;
+  --text-color: #000000;
+  --navbar-background: #f8f9fa;
+  --navbar-text: #000000;
+  --textborder: #ff8933;
+  --lineborder: #252525;
+  --red:red;
+}
+
+[data-theme=dark] {
+  --orange-gradient: #007bff;
+  --placeholder-color: #707070;
+  --orange: #007bff;
+  --black: #fff;
+  --font-family2: "Denk One";
+  --font-family:"helvetica";
+  --white: #020202;
+  --background-color: #121212;
+  --text-color: #ffffff;
+  --navbar-background: #333333;
+  --navbar-text: #ffffff;
+  --textborder: #ff8933;
+  --lineborder: #252525;
+  --red:blue;
+}
+
+.div {
+  width: 50vw;
+  height: 6.5vw;
+  margin: 5vw;
+  margin-left: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.div .img {
+  width: 175px;
+  height: 175px;
+  border-radius: 50%;
+  margin: 1.5vw 0;
+}
+.div .img img {
+  width: 175px;
+  height: 175px;
+  border-radius: 50%;
+  border: 5px solid var(--orange);
+  margin: 1.5vw 0;
+}
+.div .head, .div .mail {
+  font-size: 1.5vw;
+  font-weight: bold;
+  font-family: var(--font-family);
+  margin-top: 1vw;
+  color: var(--white);
+}
+.div .mail {
+  font-size: 1.1vw;
+  text-align: center;
+}
+
+.allposts {
+  margin-top: 10vw;
+}
+
+@media (max-width: 430px) {
+  .div {
+    width: 100%;
+    height: 50vw;
+    margin-left: 0;
+    margin-top: 5vw;
+    margin-bottom: -10vw;
+  }
+  .div .img {
+    width: 22vw;
+    height: 22vw;
+    margin-bottom: 4vw;
+  }
+  .div .img img {
+    width: 22vw;
+    height: 22vw;
+  }
+  .div .head, .div .mail {
+    width: 100%;
+    height: 5vw;
+    margin-bottom: 2.5vw;
+  }
+  .div .head h1, .div .mail h1 {
+    text-align: center;
+    font-size: 5vw;
+  }
+  .div .mail {
+    width: 100%;
+    height: 5vw;
+  }
+  .div .mail h3 {
+    text-align: center;
+    font-size: 3.5vw;
+  }
+}/*# sourceMappingURL=Profile.css.map */

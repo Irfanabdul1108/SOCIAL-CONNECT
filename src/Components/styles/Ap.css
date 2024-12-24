@@ -1,0 +1,144 @@
+:root {
+  --orange-gradient: linear-gradient(
+    90deg,
+    #ff4533 0%,
+    rgba(255, 69, 51, 0.5) 100%
+  );
+  --font-family:"helvetica"
+  ---placeholder-color: #707070;
+  --orange: #ff4533;
+  --font-family2: "Denk One";
+  --black: #020202;
+  --white: #fff;
+  --background-color: #ffffff;
+  --text-color: #000000;
+  --navbar-background: #f8f9fa;
+  --navbar-text: #000000;
+  --textborder: #ff8933;
+  --lineborder: #252525;
+  --red:red;
+}
+
+[data-theme=dark] {
+  --orange-gradient: #007bff;
+  --placeholder-color: #707070;
+  --orange: #007bff;
+  --black: #fff;
+  --font-family2: "Denk One";
+  --font-family:"helvetica";
+  --white: #020202;
+  --background-color: #121212;
+  --text-color: #ffffff;
+  --navbar-background: #333333;
+  --navbar-text: #ffffff;
+  --textborder: #ff8933;
+  --lineborder: #252525;
+  --red:blue;
+}
+
+.add {
+  width: 100%;
+  height: 35vw;
+}
+.add h1 {
+  font-size: 3vw;
+  text-align: center;
+  margin: 1.5vw 0;
+  font-family: var(--font-family2);
+  color: var(--white);
+}
+.add form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 3vw;
+}
+.add form #text {
+  width: 35vw;
+  height: 3vw;
+  border: 2px solid var(--orange);
+  background-color: var(--black);
+  border-radius: 15px;
+  padding-left: 1vw;
+  font-size: 1.2vw;
+  color: var(--white);
+  outline: none;
+}
+.add form #textareas {
+  width: 35vw;
+  height: 15vw;
+  background-color: var(--black);
+  border: 2px solid var(--orange);
+  border-radius: 15px;
+  font-size: 1.1vw;
+  color: var(--white);
+  outline: none;
+  resize: none;
+  padding-left: 1.2vw;
+  padding-top: 20px;
+}
+.add form button {
+  width: 10vw;
+  height: 3.5vw;
+  background: var(--orange-gradient);
+  border-radius: 50px;
+  color: var(--white);
+  font-size: 1.2vw;
+  border: 0;
+}
+.add form #file {
+  width: 35vw;
+  height: 3.5vw;
+  border-radius: 50px;
+  color: var(--white);
+  border: 2px solid var(--orange);
+  font-size: 1.2vw;
+  padding-left: 1vw;
+  padding-top: 0.8vw;
+}
+
+@media (max-width: 430px) {
+  .add {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10vw;
+  }
+  .add .headers {
+    width: 100%;
+    height: 20vw;
+  }
+  .add .headers h1 {
+    font-size: 15vw;
+  }
+  .add .formers {
+    width: 100%;
+    min-height: 100vw;
+    padding-top: 30vw;
+  }
+  .add .formers #text {
+    width: 40vw;
+    height: 5vw;
+    border-radius: 5px;
+    font-size: 1.5vw;
+  }
+  .add .formers #textareas {
+    width: 40vw;
+    height: 35vw;
+    font-size: 1.5vw;
+    border-radius: 5px;
+    padding: 1vw 0 0 1vw;
+  }
+  .add .formers #file {
+    width: 40vw;
+    height: 6vw;
+    font-size: 1.5vw;
+    border-radius: 5px;
+  }
+  .add .formers button {
+    scale: 1.5;
+  }
+}/*# sourceMappingURL=Ap.css.map */

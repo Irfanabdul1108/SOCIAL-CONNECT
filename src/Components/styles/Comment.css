@@ -1,0 +1,63 @@
+:root {
+  --orange-gradient: linear-gradient(
+    90deg,
+    #ff4533 0%,
+    rgba(255, 69, 51, 0.5) 100%
+  );
+  --font-family:"helvetica"
+  ---placeholder-color: #707070;
+  --orange: #ff4533;
+  --font-family2: "Denk One";
+  --black: #020202;
+  --white: #fff;
+  --background-color: #ffffff;
+  --text-color: #000000;
+  --navbar-background: #f8f9fa;
+  --navbar-text: #000000;
+  --textborder: #ff8933;
+  --lineborder: #252525;
+  --red:red;
+}
+
+[data-theme=dark] {
+  --orange-gradient: #007bff;
+  --placeholder-color: #707070;
+  --orange: #007bff;
+  --black: #fff;
+  --font-family2: "Denk One";
+  --font-family:"helvetica";
+  --white: #020202;
+  --background-color: #121212;
+  --text-color: #ffffff;
+  --navbar-background: #333333;
+  --navbar-text: #ffffff;
+  --textborder: #ff8933;
+  --lineborder: #252525;
+  --red:blue;
+}
+
+#headstyle {
+  color: var(--white);
+}
+
+#formform #submit {
+  background: var(--orange-gradient);
+}
+#formform #text {
+  border: 2px solid var(--black);
+  border-bottom: 2px solid var(--orange);
+  color: var(--white);
+  background: var(--black);
+}
+
+@media (max-width: 430px) {
+  form {
+    scale: 1.95;
+    display: flex;
+    align-items: center;
+    margin: 0 25vw 6vw 25vw;
+  }
+  #headstyle {
+    font-size: 5vw;
+  }
+}/*# sourceMappingURL=Comment.css.map */

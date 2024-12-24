@@ -1,0 +1,325 @@
+@import "__colors.scss";
+
+.likes{
+    margin-top: 2.5vw;
+.boxes {
+    width: 30vw;
+    height: 45vw;
+    border-radius: 10px;
+    border: 2px solid var(--orange);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 35%;
+    margin-top: 1.5vw;
+    overflow: hidden;
+  
+    .firbox {
+      width: 100%;
+      height: 6.5vw;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 2px solid var(--orange);
+      background:var(--orange-gradient);
+    .lef {
+        width: 90%;
+        height: 6.5vw;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+         img {
+          width: 5vw;
+          height: 5vw;
+          border-radius: 50%;
+          margin: 0 0.9vw;
+        }
+        h1 {
+          font-size: 1.6vw;
+          color: #fff;
+          margin-bottom: 0.2vw;
+        }
+      }
+    .righ {
+        width: 10%;
+        height: 6.5vw;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-end;
+        padding: 0.6vw 0.6vw 0 0;
+        Link{
+      text-decoration: none;
+           }
+      }
+      
+    }
+    .secobox {
+      width: 100%;
+      height: 30vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+    }
+    .thbox{
+      width: 100%;
+      height:4vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+        button{
+          width: 7vw;
+          height: 3vw;
+          border-radius: 10px;
+          color: var(--white);
+          font-family: var(--font-family2);
+          background-color: var(--black);
+          border: 2px solid var(--orange);
+          font-size: 1.2vw;
+         }:hover{
+          background: var(--orange-gradient);
+          color: var(--white);
+          border-radius: 10px;
+        
+      }
+    }
+    .fourbox{
+      width: 100%; 
+      height: 4.5vw;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1vw;
+      border-top: 2px solid var(--orange);
+      background: var(--orange-gradient);
+       .edit{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-family: var(--font-family2);
+      }
+      .comm{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .like{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-family: var(--font-family2);
+      button{
+        width: 4.5vw;
+        height: 4.5vw;
+        border-radius: 10px;
+        color:white;
+        font-family: var(--font-family2);
+        background-color: var(--orange-gradient);
+        font-size: 1.4vw;
+        border: 0;
+  outline: none;
+    }
+      }
+    }
+  }
+  
+}
+
+
+
+
+
+
+@media (max-width: 430px) {
+
+
+
+
+  
+  .likes{
+    .boxes{
+    width: 80vw;
+    height: 120vw;
+    border-radius: 10px;
+    border: 2px solid var(--orange);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 10%;
+    overflow: hidden;
+    margin-top: 4.5vw;
+    .firbox {
+      width: 100%;
+      height: 20vw;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 2px solid var(--orange);
+      background:var(--orange-gradient);
+      .righ{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 1.5vw;
+        .btn3{
+          scale: 3.5;
+        }
+      }
+    .lef {
+        width: 90%;
+        height: 15.5vw;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+         img {
+          width: 12vw;
+          height: 12vw;
+          border-radius: 50%;
+          margin: 0 2.9vw;
+        }
+        h1 {
+          font-size: 5.5vw;
+          color: #fff;
+          margin-bottom: 0.2vw;
+        }
+        h2{
+          font-size: 4.5vw;
+        }
+      }
+    .righ {
+        width: 10%;
+        height: 15.5vw;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-end;
+        padding: 0.6vw 0.6vw 0 0;
+        Link{
+      text-decoration: none;
+           }
+      }
+      
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .secobox {
+      width: 100%;
+      height: 75vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   img {
+    width: 100%;
+    height: 100%;
+    object-fit:contain;
+  }
+  
+    }
+
+
+
+
+
+
+
+    .thbox{
+      width: 100%;
+      height:13vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+        button{
+          width: 35vw;
+          height:10vw;
+          border-radius: 10px;
+          color: var(--white);
+          font-family: var(--font-family2);
+          background-color: var(--black);
+          border: 2px solid var(--orange);
+          font-size: 4vw;
+         }:hover{
+          background: var(--orange-gradient);
+          color: var(--white);
+          border-radius: 10px;
+        
+      }
+    }
+
+
+
+
+
+
+
+
+    .fourbox{
+      width: 100%; 
+      height: 12vw;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      border-top: 2px solid var(--orange);
+      background: var(--orange-gradient);
+      font-size: 5.5vw;
+       .edit{
+        height: 15vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-family: var(--font-family2);
+      scale: 2.8;
+      margin-right: 14vw;
+      }
+      .comm{
+        height: 15vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      scale: 2.8;
+      margin-right: 14vw;
+
+      }
+      .like{
+        height: 15vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-family: var(--font-family2);
+      scale: 2.8;
+        span{
+          color: #fff;
+        }
+    div{
+        width:6.5vw;
+        height: 4.5vw;
+        display: flex;
+        align-items: center;
+        font-size: 1.4vw;
+        span{
+     margin-left: 0.5vw;
+        }
+    }
+      }
+    }
+  }
+}
+}

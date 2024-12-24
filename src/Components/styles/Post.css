@@ -1,0 +1,311 @@
+:root {
+  --orange-gradient: linear-gradient(
+    90deg,
+    #ff4533 0%,
+    rgba(255, 69, 51, 0.5) 100%
+  );
+  --font-family:"helvetica"
+  ---placeholder-color: #707070;
+  --orange: #ff4533;
+  --font-family2: "Denk One";
+  --black: #020202;
+  --white: #fff;
+  --background-color: #ffffff;
+  --text-color: #000000;
+  --navbar-background: #f8f9fa;
+  --navbar-text: #000000;
+  --textborder: #ff8933;
+  --lineborder: #252525;
+  --red:red;
+}
+
+[data-theme=dark] {
+  --orange-gradient: #007bff;
+  --placeholder-color: #707070;
+  --orange: #007bff;
+  --black: #fff;
+  --font-family2: "Denk One";
+  --font-family:"helvetica";
+  --white: #020202;
+  --background-color: #121212;
+  --text-color: #ffffff;
+  --navbar-background: #333333;
+  --navbar-text: #ffffff;
+  --textborder: #ff8933;
+  --lineborder: #252525;
+  --red:blue;
+}
+
+.boxes {
+  width: 30vw;
+  height: 45vw;
+  border-radius: 10px;
+  border: 2px solid var(--orange);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 35%;
+  margin-top: 1.5vw;
+  overflow: hidden;
+}
+.boxes .firbox {
+  width: 100%;
+  height: 6.5vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid var(--orange);
+  background: var(--orange-gradient);
+}
+.boxes .firbox .lef {
+  width: 90%;
+  height: 6.5vw;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.boxes .firbox .lef img {
+  width: 5vw;
+  height: 5vw;
+  border-radius: 50%;
+  margin: 0 0.9vw;
+}
+.boxes .firbox .lef h1 {
+  font-size: 1.6vw;
+  color: #fff;
+  margin-bottom: 0.2vw;
+}
+.boxes .firbox .righ {
+  width: 10%;
+  height: 6.5vw;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0.6vw 0.6vw 0 0;
+}
+.boxes .firbox .righ Link {
+  text-decoration: none;
+}
+.boxes .secobox {
+  width: 100%;
+  height: 30vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.boxes .secobox img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.boxes .thbox {
+  width: 100%;
+  height: 4vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.boxes .thbox button {
+  width: 7vw;
+  height: 3vw;
+  border-radius: 10px;
+  color: var(--white);
+  font-family: var(--font-family2);
+  background-color: var(--black);
+  border: 2px solid var(--orange);
+  font-size: 1.2vw;
+}
+.boxes .thbox :hover {
+  background: var(--orange-gradient);
+  color: var(--white);
+  border-radius: 10px;
+}
+.boxes .fourbox {
+  width: 100%;
+  height: 4.5vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1vw;
+  border-top: 2px solid var(--orange);
+  background: var(--orange-gradient);
+}
+.boxes .fourbox .edit {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: var(--font-family2);
+}
+.boxes .fourbox .comm {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.boxes .fourbox .like {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: var(--font-family2);
+}
+.boxes .fourbox .like span {
+  color: #fff;
+}
+.boxes .fourbox .like div {
+  width: 6.5vw;
+  height: 4.5vw;
+  display: flex;
+  align-items: center;
+  font-size: 1.4vw;
+}
+.boxes .fourbox .like div span {
+  margin-left: 0.5vw;
+}
+
+@media (max-width: 430px) {
+  .boxes {
+    width: 80vw;
+    height: 120vw;
+    border-radius: 10px;
+    border: 2px solid var(--orange);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 10%;
+    overflow: hidden;
+    margin-top: 4.5vw;
+  }
+  .boxes .firbox {
+    width: 100%;
+    height: 20vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid var(--orange);
+    background: var(--orange-gradient);
+  }
+  .boxes .firbox .righ {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1.5vw;
+  }
+  .boxes .firbox .righ .btn3 {
+    scale: 3.5;
+  }
+  .boxes .firbox .lef {
+    width: 90%;
+    height: 15.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .boxes .firbox .lef img {
+    width: 12vw;
+    height: 12vw;
+    border-radius: 50%;
+    margin: 0 2.9vw;
+  }
+  .boxes .firbox .lef h1 {
+    font-size: 5.5vw;
+    color: #fff;
+    margin-bottom: 0.2vw;
+  }
+  .boxes .firbox .lef h2 {
+    font-size: 4.5vw;
+  }
+  .boxes .firbox .righ {
+    width: 10%;
+    height: 15.5vw;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 0.6vw 0.6vw 0 0;
+  }
+  .boxes .firbox .righ Link {
+    text-decoration: none;
+  }
+  .boxes .secobox {
+    width: 100%;
+    height: 75vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .boxes .secobox img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .boxes .thbox {
+    width: 100%;
+    height: 13vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .boxes .thbox button {
+    width: 35vw;
+    height: 10vw;
+    border-radius: 10px;
+    color: var(--white);
+    font-family: var(--font-family2);
+    background-color: var(--black);
+    border: 2px solid var(--orange);
+    font-size: 4vw;
+  }
+  .boxes .thbox :hover {
+    background: var(--orange-gradient);
+    color: var(--white);
+    border-radius: 10px;
+  }
+  .boxes .fourbox {
+    width: 100%;
+    height: 12vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-top: 2px solid var(--orange);
+    background: var(--orange-gradient);
+    font-size: 5.5vw;
+  }
+  .boxes .fourbox .edit {
+    height: 15vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: var(--font-family2);
+    scale: 2.8;
+    margin-right: 14vw;
+  }
+  .boxes .fourbox .comm {
+    height: 15vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    scale: 2.8;
+    margin-right: 14vw;
+  }
+  .boxes .fourbox .like {
+    height: 15vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: var(--font-family2);
+    scale: 2.8;
+  }
+  .boxes .fourbox .like span {
+    color: #fff;
+  }
+  .boxes .fourbox .like div {
+    width: 6.5vw;
+    height: 4.5vw;
+    display: flex;
+    align-items: center;
+    font-size: 1.4vw;
+  }
+  .boxes .fourbox .like div span {
+    margin-left: 0.5vw;
+  }
+}/*# sourceMappingURL=Post.css.map */

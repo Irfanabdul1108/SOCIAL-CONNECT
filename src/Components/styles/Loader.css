@@ -1,0 +1,32 @@
+@import "__colors.scss";
+.load{
+height: 90vh;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.loader {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: relative;
+    transform:rotate(45deg);
+    background: var(--white);
+  }
+  .loader::before {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    inset: 0px;
+    border-radius: 50%;
+    border:24px solid var(--orange);
+    animation: prixClipFix 2s infinite linear;
+  }
+
+  @keyframes prixClipFix {
+      0%   {clip-path:polygon(50% 50%,0 0,0 0,0 0,0 0,0 0)}
+      25%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 0,100% 0,100% 0)}
+      50%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,100% 100%,100% 100%)}
+      75%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 100%)}
+      100% {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 0)}
+  }

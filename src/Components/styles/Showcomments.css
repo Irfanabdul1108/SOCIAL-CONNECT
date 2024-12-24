@@ -1,0 +1,116 @@
+:root {
+  --orange-gradient: linear-gradient(
+    90deg,
+    #ff4533 0%,
+    rgba(255, 69, 51, 0.5) 100%
+  );
+  --font-family:"helvetica"
+  ---placeholder-color: #707070;
+  --orange: #ff4533;
+  --font-family2: "Denk One";
+  --black: #020202;
+  --white: #fff;
+  --background-color: #ffffff;
+  --text-color: #000000;
+  --navbar-background: #f8f9fa;
+  --navbar-text: #000000;
+  --textborder: #ff8933;
+  --lineborder: #252525;
+  --red:red;
+}
+
+[data-theme=dark] {
+  --orange-gradient: #007bff;
+  --placeholder-color: #707070;
+  --orange: #007bff;
+  --black: #fff;
+  --font-family2: "Denk One";
+  --font-family:"helvetica";
+  --white: #020202;
+  --background-color: #121212;
+  --text-color: #ffffff;
+  --navbar-background: #333333;
+  --navbar-text: #ffffff;
+  --textborder: #ff8933;
+  --lineborder: #252525;
+  --red:blue;
+}
+
+.length {
+  width: 50vw;
+  margin: 1vw;
+  margin-left: 25%;
+  height: 5vw;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.length .profile {
+  width: 33%;
+  height: 5vw;
+  padding: 1vw;
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+}
+.length .profile p {
+  font-size: 1vw;
+  font-weight: bold;
+  color: var(--white);
+}
+.length .profile img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2.5px solid var(--white);
+}
+.length .msg {
+  width: 67%;
+  height: 5vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.length .msg .commhead {
+  margin-bottom: 0.8vw;
+  color: var(--white);
+}
+.length .msg .icons {
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+}
+.length .msg .icons .disliked {
+  color: var(--white);
+}
+
+@media (max-width: 430px) {
+  .length {
+    width: 100%;
+    height: 15vw;
+    margin-left: 0;
+    padding: 0 3vw;
+    margin-bottom: 1.5vw;
+  }
+  .length .profile {
+    width: 35vw;
+    height: 100%;
+  }
+  .length .profile img {
+    width: 6vw;
+    height: 6vw;
+  }
+  .length .profile p {
+    font-size: 3vw;
+  }
+  .length .msg .commhead {
+    font-size: 3.2vw;
+    margin-left: 2.5vw;
+  }
+  .length .msg .icons .liked, .length .msg .icons .disliked {
+    width: 1vw;
+    height: 1vw;
+    margin: 1.5vw 2.5vw;
+  }
+}/*# sourceMappingURL=Showcomments.css.map */

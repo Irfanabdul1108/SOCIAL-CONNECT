@@ -1,0 +1,70 @@
+:root {
+  --orange-gradient: linear-gradient(
+    90deg,
+    #ff4533 0%,
+    rgba(255, 69, 51, 0.5) 100%
+  );
+  --font-family:"helvetica"
+  ---placeholder-color: #707070;
+  --orange: #ff4533;
+  --font-family2: "Denk One";
+  --black: #020202;
+  --white: #fff;
+  --background-color: #ffffff;
+  --text-color: #000000;
+  --navbar-background: #f8f9fa;
+  --navbar-text: #000000;
+  --textborder: #ff8933;
+  --lineborder: #252525;
+  --red:red;
+}
+
+[data-theme=dark] {
+  --orange-gradient: #007bff;
+  --placeholder-color: #707070;
+  --orange: #007bff;
+  --black: #fff;
+  --font-family2: "Denk One";
+  --font-family:"helvetica";
+  --white: #020202;
+  --background-color: #121212;
+  --text-color: #ffffff;
+  --navbar-background: #333333;
+  --navbar-text: #ffffff;
+  --textborder: #ff8933;
+  --lineborder: #252525;
+  --red:blue;
+}
+
+.searchbar {
+  margin-left: 35%;
+  margin-top: 3.5vw;
+  position: sticky;
+}
+.searchbar input {
+  width: 30vw;
+  height: 3vw;
+  border-bottom: 2px solid var(--orange);
+  border-top: 2px solid var(--black);
+  border-left: 2px solid var(--black);
+  border-right: 2px solid var(--black);
+  background-color: var(--black);
+  color: var(--white);
+  padding-left: 1vw;
+  font-size: 1.4vw;
+  outline: none;
+}
+.searchbar ::-moz-placeholder {
+  color: rgb(129, 129, 129);
+}
+.searchbar ::placeholder {
+  color: rgb(129, 129, 129);
+}
+
+@media (max-width: 430px) {
+  .searchbar {
+    margin-left: 50%;
+    margin-bottom: 10vw;
+    scale: 2.5;
+  }
+}/*# sourceMappingURL=Gp.css.map */

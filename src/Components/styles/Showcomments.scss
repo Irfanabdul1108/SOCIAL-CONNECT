@@ -1,0 +1,98 @@
+@import "__colors.scss";
+.length{
+    width: 50vw;
+    margin: 1vw;
+    margin-left:25% ;
+    height: 5vw;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    .profile{
+        width: 33%;
+        height: 5vw;
+        padding: 1vw;
+        display: flex;
+        align-items: center;
+        gap: 1vw;
+        p{
+            font-size: 1vw;
+            font-weight: bold;
+            color:var(--white);
+        }
+        img{
+            width: 50px;
+            height:50px;
+            border-radius: 50%;
+            border: 2.5px solid var(--white);
+        }
+    }
+    .msg{
+        width: 67%;
+        height: 5vw;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        .commhead{
+   margin-bottom: 0.8vw;
+   color: var(--white);
+        }
+        .icons{
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+        .disliked{
+color: var(--white);
+        }
+        }
+    }
+
+
+}
+
+
+
+@media(max-width:430px){
+    .length{
+        width: 100%;
+        height: 15vw;
+        margin-left: 0;
+        padding: 0 3vw;
+        margin-bottom: 1.5vw;
+        .profile{
+            width: 35vw;
+            height: 100%;
+            img{
+                width: 6vw;
+                height: 6vw;
+            }
+            p{
+                font-size: 3vw;
+            }
+        }
+    .msg{
+        .commhead{
+            font-size: 3.2vw;
+            margin-left: 2.5vw;
+        }
+        .icons{
+            .liked,.disliked{
+                width: 1vw;
+            height: 1vw;
+            margin: 1.5vw 2.5vw;
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+    }
+}

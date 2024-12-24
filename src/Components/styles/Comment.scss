@@ -1,0 +1,28 @@
+@import "__colors.scss";
+#headstyle{
+    color: var(--white);
+}
+#formform{
+    #submit{
+        background: var(--orange-gradient);
+    }
+    #text{
+        border: 2px solid var(--black);
+        border-bottom: 2px solid var(--orange);
+        color: var(--white);
+        background: var(--black);
+    }
+}
+
+
+@media (max-width: 430px) {
+    form{
+        scale: 1.95;
+        display: flex;
+        align-items: center;
+        margin: 0 25vw 6vw 25vw;
+    }
+   #headstyle{
+    font-size: 5vw;
+   }
+  }

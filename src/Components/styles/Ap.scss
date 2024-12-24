@@ -1,0 +1,132 @@
+@import "__colors.scss";
+
+.add{
+    width: 100%;
+    height: 35vw;
+    h1{
+        font-size: 3vw;
+        text-align: center;
+        margin: 1.5vw 0;
+        font-family: var(--font-family2);
+        color: var(--white);
+    }
+
+    form{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        gap: 3vw;
+        #text{
+            width: 35vw;
+            height: 3vw;
+            border: 2px solid var(--orange);
+            background-color:var(--black);
+            border-radius:15px;
+            padding-left:  1vw;
+            font-size: 1.2vw;
+            color: var(--white);
+            outline: none; 
+            } 
+            #textareas{
+                width: 35vw;
+            height: 15vw;
+                background-color: var(--black);
+                border: 2px solid var(--orange);
+                border-radius: 15px;
+                font-size: 1.1vw;
+                color: var(--white);
+             outline: none; 
+             resize: none;
+             padding-left: 1.2vw;
+             padding-top: 20px;
+            }
+        
+            button{
+                width: 10vw;
+                height: 3.5vw;
+         background: var(--orange-gradient);
+                border-radius: 50px;
+                color: var(--white);
+                font-size: 1.2vw;
+                border: 0
+            }
+         #file{
+            width: 35vw;
+            height: 3.5vw;
+            border-radius: 50px;
+            color: var(--white);
+            border: 2px solid var(--orange);
+            font-size: 1.2vw;
+            padding-left: 1vw;
+            padding-top: 0.8vw;
+         }  
+    }
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 430px) {
+       .add{
+        width: 100%;
+        height: 100vh;
+        display: flex;    
+        align-items: center;
+        flex-direction: column;
+        margin-top: 10vw;
+        .headers{
+            width: 100%;
+            height: 20vw;
+            h1{
+                font-size: 15vw;
+            }
+        }
+        .formers{
+            width: 100%;
+            min-height: 100vw;
+            padding-top: 30vw;
+            #text{
+                width: 40vw;
+                height: 5vw;
+                border-radius: 5px;
+                font-size: 1.5vw;
+            }
+            #textareas{
+                width: 40vw;
+                height: 35vw;
+                font-size: 1.5vw;
+                border-radius: 5px;
+                padding: 1vw 0 0 1vw;
+            }
+            #file{
+                width: 40vw;
+                height: 6vw;
+                font-size: 1.5vw;
+                border-radius: 5px;
+            }
+            button {
+ scale: 1.5;
+            }
+        }
+       }
+  }

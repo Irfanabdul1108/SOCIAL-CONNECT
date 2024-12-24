@@ -1,0 +1,91 @@
+:root {
+  --orange-gradient: linear-gradient(
+    90deg,
+    #ff4533 0%,
+    rgba(255, 69, 51, 0.5) 100%
+  );
+  --font-family:"helvetica"
+  ---placeholder-color: #707070;
+  --orange: #ff4533;
+  --font-family2: "Denk One";
+  --black: #020202;
+  --white: #fff;
+  --background-color: #ffffff;
+  --text-color: #000000;
+  --navbar-background: #f8f9fa;
+  --navbar-text: #000000;
+  --textborder: #ff8933;
+  --lineborder: #252525;
+  --red:red;
+}
+
+[data-theme=dark] {
+  --orange-gradient: #007bff;
+  --placeholder-color: #707070;
+  --orange: #007bff;
+  --black: #fff;
+  --font-family2: "Denk One";
+  --font-family:"helvetica";
+  --white: #020202;
+  --background-color: #121212;
+  --text-color: #ffffff;
+  --navbar-background: #333333;
+  --navbar-text: #ffffff;
+  --textborder: #ff8933;
+  --lineborder: #252525;
+  --red:blue;
+}
+
+.specific {
+  width: 100%;
+  height: auto;
+  color: var(--white);
+}
+.specific .specificposts {
+  margin-top: 2.2vw;
+}
+.specific .subspecific img {
+  border: 5px solid var(--orange);
+  border-radius: 50%;
+  margin-bottom: 1.2vw;
+  margin-left: 46%;
+  width: 120px;
+  height: 120px;
+}
+.specific .subspecific h1 {
+  font-size: 2.6vw;
+  margin-bottom: 1.2vw;
+  font-weight: bold;
+  margin-left: 40%;
+}
+.specific .subspecific p {
+  font-size: 1.8vw;
+  margin-bottom: 1.4vw;
+  margin-left: 37.5%;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 430px) {
+  .subspecific img {
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    scale: 0.8;
+  }
+  .subspecific .headsup {
+    width: 100%;
+    height: -moz-fit-content;
+    height: fit-content;
+    scale: 2;
+    padding-left: 25%;
+  }
+  .subspecific .parasup {
+    width: 100%;
+    height: -moz-fit-content;
+    height: fit-content;
+    scale: 2;
+    padding-left: 20%;
+    padding-top: 2vw;
+  }
+}/*# sourceMappingURL=Specific.css.map */

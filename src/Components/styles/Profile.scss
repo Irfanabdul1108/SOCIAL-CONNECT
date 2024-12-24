@@ -1,0 +1,84 @@
+@import "__colors.scss";
+
+.div{
+    width: 50vw;
+    height: 6.5vw;
+    margin: 5vw;
+    margin-left: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .img{
+        width: 175px;
+        height: 175px;
+        border-radius: 50%;
+        margin: 1.5vw 0;
+        img{
+            width: 175px;
+            height: 175px;
+            border-radius: 50%; 
+            border: 5px solid var(--orange);
+            margin: 1.5vw 0;
+        }
+    }
+ .head{
+         font-size: 1.5vw;
+         font-weight: bold;
+         font-family: var(--font-family);
+         margin-top: 1vw;
+         color: var(--white);
+ }
+    
+.mail{
+    @extend .head;
+    font-size: 1.1vw;
+    text-align: center;
+}
+}
+.allposts{
+    margin-top: 10vw;
+}
+
+
+@media (max-width:430px){
+    .div{
+        width: 100%;
+        height: 50vw;
+        margin-left: 0;
+        margin-top: 5vw;
+        margin-bottom: -10vw;
+        .img{
+            width: 22vw;
+            height: 22vw;
+            margin-bottom: 4vw;
+            img{
+                width:22vw;
+                height:22vw;
+
+            }
+        }
+        .head{
+            width: 100%;
+            height: 5vw;
+            margin-bottom: 2.5vw;
+            h1{
+                text-align: center;
+                font-size: 5vw;
+            }
+        }
+        .mail{
+            width: 100%;
+            height: 5vw;
+ h3{
+    text-align: center;
+                font-size: 3.5vw;  
+                
+ }
+        }
+    }
+
+
+
+
+}
