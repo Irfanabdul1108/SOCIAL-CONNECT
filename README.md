@@ -79,16 +79,11 @@ This project is a dynamic, feature-rich website designed to provide users with a
 - **React.js**: Component-based UI development.
 - **Styled Components**: For dynamic styling and theme toggling.
 
-### Backend
-- **Node.js & Express**: RESTful APIs for seamless data operations.
-
 ### Database
 - **Firebase** (or any other preferred database): Real-time data updates and secure data storage.
 
 ### Additional Tools
-- **Axios**: For HTTP requests.
 - **React Router**: For navigation.
-- **JWT**: For secure authentication.
 
 ---
 
